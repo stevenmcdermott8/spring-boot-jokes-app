@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ChuckNorrisJokeServicempl implements JokeService {
 	@Override
-	public String getjoke() {
+	public String getJoke() {
 		return new ChuckNorrisQuotes().getRandomQuote();
 	}
 }
