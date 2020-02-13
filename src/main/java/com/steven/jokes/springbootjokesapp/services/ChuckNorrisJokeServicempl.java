@@ -9,10 +9,11 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ChuckNorrisJokeServicempl implements JokeService {
+
 	private final ChuckNorrisQuotes chuckNorrisQuotes;
 
-	public ChuckNorrisJokeServicempl() {
-		this.chuckNorrisQuotes = new ChuckNorrisQuotes();
+	public ChuckNorrisJokeServicempl(ChuckNorrisQuotes chuckNorrisQuotes) {
+		this.chuckNorrisQuotes = chuckNorrisQuotes;
 	}
 
 	@Override
